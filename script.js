@@ -1,5 +1,16 @@
 //your JS code here. If required.
-function togglePanel(panelNumber) {
-    const panel = document.getElementById(`panel-${panelNumber}`);
-    panel.classList.toggle('active');
-}
+<script>
+    function togglePanel(panelNumber) {
+        const panel = document.getElementById(`panel-${panelNumber}`);
+        const panels = document.querySelectorAll('.panel');
+
+        panels.forEach((p) => {
+            p.classList.remove('active');
+        });
+
+        panel.classList.add('active');
+    }
+</script>
+
+</body>
+</html>
